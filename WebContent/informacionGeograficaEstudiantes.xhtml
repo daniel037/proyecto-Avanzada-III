@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+
+	<h:panelGroup>
+	<h:form horizontal="true">
+	
+			<!-- **************************************************  -->
+			<!-- Sección informacion geografica estudiantil                -->
+			<!-- **************************************************  -->
+			<b:container fluid="true">
+				<b:row>
+					<b:column medium-screen="10">
+						<h1>Informacion Geografica Estudiante</h1>
+    				</b:column>
+				</b:row>
+								
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Identificacion:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:inputText placeholder="Identificacion" required="true" id="txt_id" mask="numeric" />
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="txt_id" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Pais: " />
+					</b:column>
+					
+					<b:column medium-screen="2">
+						<b:selectOneMenu name="pais" large-screen="full-width" id="select_pais">
+							<f:selectItem itemLabel="Pais" itemValue="" />
+							<f:selectItem itemLabel="Colombia" itemValue="colombia" />
+							<f:selectItem itemLabel="Ecuador" itemValue="ecuador" />
+							<f:selectItem itemLabel="Venesuela" itemValue="venesuela" />
+						</b:selectOneMenu>
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="select_pais" />
+    				</b:column>
+				</b:row>
+				
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Departamento: " />
+					</b:column>
+					
+					<b:column medium-screen="2">
+						<b:selectOneMenu name="departamento" large-screen="full-width" id="select_departamento">
+							<f:selectItem itemLabel="Departamento" itemValue="" />
+							<f:selectItem itemLabel="Nariño" itemValue="nariño" />
+							<f:selectItem itemLabel="Cauca" itemValue="cauca" />
+							<f:selectItem itemLabel="Antioquia" itemValue="antioquia" />
+						</b:selectOneMenu>
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="select_departamento" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Municipio: " />
+					</b:column>
+					
+					<b:column medium-screen="2">
+						<b:selectOneMenu name="municipio" large-screen="full-width" id="select_municipio">
+							<f:selectItem itemLabel="Municipio" itemValue="" />
+							<f:selectItem itemLabel="..." itemValue="..." />
+							<f:selectItem itemLabel="..." itemValue="..." />
+							<f:selectItem itemLabel="..." itemValue="..." />
+						</b:selectOneMenu>
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="select_pais" />
+    				</b:column>
+				</b:row>
+				
+					
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Direccion:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:inputText placeholder="Direccion" required="true" id="txt_direccion" />
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="txt_direccion" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="ubicacion:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:inputText placeholder="Ubicacion Actual" required="true" id="txt_ubicacion" mask="numeric" />
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="txt_ubicacion" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<b:commandButton value="Guardar"  look="primary" style="width:100%" />
+					</b:column>
+					<b:column medium-screen="1">
+						<b:commandButton value="Actualizar" look="primary" style="width:100%" />
+					</b:column>
+					<b:column medium-screen="1">
+						<b:commandButton value="Registrar" look="primary" style="width:100%" />
+					</b:column>
+				</b:row>
+				
+
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+			</b:container>
+		</h:form>
+	</h:panelGroup> 
+</h:body>
+</html>

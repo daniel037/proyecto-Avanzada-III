@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+
+	<h:panelGroup>
+	<h:form horizontal="true">
+	
+			<!-- **************************************************  -->
+			<!-- Sección situacion de salud funcionario                -->
+			<!-- **************************************************  -->
+			<b:container fluid="true">
+				<b:row>
+					<b:column medium-screen="10">
+						<h1>Situación De Salud Funcionario</h1>
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Nombre:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:inputText placeholder="Nombre Completo" required="true" id="txt_nombre" />
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="txt_nombre" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Identificacion:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:inputText placeholder="Identificacion" required="true" id="txt_id" mask="numeric" />
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="txt_id" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Cargo: " />
+					</b:column>
+					
+					<b:column medium-screen="2">
+						<b:selectOneMenu name="cargo" large-screen="full-width" id="select_cargo">
+							<f:selectItem itemLabel="Cargo" itemValue="" />
+							<f:selectItem itemLabel="..." itemValue="..." />
+							<f:selectItem itemLabel="..." itemValue="..." />
+							<f:selectItem itemLabel="..." itemValue="..." />
+						</b:selectOneMenu>
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="select_cargo" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Dependencia: " />
+					</b:column>
+					
+					<b:column medium-screen="2">
+						<b:selectOneMenu name="dependencia" large-screen="full-width" id="select_dependencia">
+							<f:selectItem itemLabel="Dependencia" itemValue="" />
+							<f:selectItem itemLabel="..." itemValue="..." />
+							<f:selectItem itemLabel="..." itemValue="..." />
+							<f:selectItem itemLabel="..." itemValue="..." />
+						</b:selectOneMenu>
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="select_dependencia" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Email:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:inputText placeholder="Email" required="true" id="txt_email" />
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="txt_email" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Celularl:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:inputText placeholder="Numero Celular" required="true" id="txt_celular" mask="numeric" />
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="txt_celular" />
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="1">
+						<h:outputText value="Telefono:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:inputText placeholder="Numero Telefono"  id="txt_telefono" mask="numeric" />
+					</b:column>
+					<b:column medium-screen="2">
+      					<b:message for="txt_telefono" />
+    				</b:column>
+				</b:row>
+				
+
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="2">
+						<b:commandButton value="Actualizar"  look="primary" style="width:100%" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:commandButton value="Continuar" look="primary" style="width:100%" />
+					</b:column>
+				</b:row>
+				
+
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+			</b:container>
+		</h:form>
+	</h:panelGroup> 
+</h:body>
+</html>

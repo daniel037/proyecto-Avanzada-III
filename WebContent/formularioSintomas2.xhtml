@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+
+	<h:panelGroup>
+	<h:form horizontal="true">
+	
+			<!-- **************************************************  -->
+			<!-- formularios de sintomas 2             -->
+			<!-- **************************************************  -->
+			<b:container fluid="true">
+				<b:row>
+					<b:column medium-screen="10">
+						<h1>Forulario De Sintomas Segunda ParteXXXXX</h1>
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="5">
+						<p>
+							¿En los últimos 2 días han tenido alguno de estos síntomas.
+							(NO RELACIONADOS CON ALERGIAS RESPIRATORIAS):
+						</p>
+						<br></br>
+					</b:column>	
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="5">
+						<p>
+							¿En los ultimos 14 días, ha tenido contacto estrecho
+							(Menor a 2 metros por mas de 15 minutos)
+							con una persona con sintomas respiatorios y usted no 
+							sabe si tiene COVID-19 positivo?
+						</p>
+					</b:column>		
+				</b:row>
+				<b:row>
+					<b:radiobutton value="#{radiobutton.pregunta1}">
+    					<f:selectItem itemValue="" itemLabel="Si he tenido contacto con una persona con sintomas respiratorios" />
+    					<f:selectItem itemValue=""  itemLabel="NO" />
+  					</b:radiobutton>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+				
+				<b:row>
+					<b:column medium-screen="5">
+						<p>
+							¿En los ultimos 14 días, ha tenido contacto estrecho
+							(Menor a 2 metros por mas de 15 minutos)
+							con una persona con COVID-19?
+						</p>
+					</b:column>		
+				</b:row>
+				<b:row>
+					<b:radiobutton value="#{radiobutton.pregunta2}">
+    					<f:selectItem itemValue="" itemLabel="Si he tenido contacto con una persona COVID-19 positivo" />
+    					<f:selectItem itemValue=""  itemLabel="NO" />
+  					</b:radiobutton>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+				
+				<b:row>
+					<b:column medium-screen="5">
+						<p>
+							¿En los ultimos 14 dias, ha estado en aislamiento preventivo por
+							presentar sintomas respiratorios y/o contacto estrecho con casos
+							sospechosos o confirmados de COVID-19 ?
+						</p>
+					</b:column>		
+				</b:row>
+				<b:row>
+					<b:radiobutton value="#{radiobutton.pregunta3}">
+    					<f:selectItem itemValue="" itemLabel="Si" />
+    					<f:selectItem itemValue=""  itemLabel="NO" />
+  					</b:radiobutton>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+				
+				<b:row>
+					<b:column medium-screen="5">
+						<p>	
+							¿En los ultimos 14 dias, le han realizado pruevas de COVID-19?
+						</p>
+					</b:column>		
+				</b:row>
+				<b:row>
+					<b:radiobutton value="#{radiobutton.pregunta4}">
+    					<f:selectItem itemValue="" itemLabel="Si, el resultado fue POSITIVO" />
+    					<f:selectItem itemValue=""  itemLabel="Si, el resultado fue EGATIVO" />
+    					<f:selectItem itemValue=""  itemLabel="Si, el resultado esta pendiente" />
+    					<f:selectItem itemValue=""  itemLabel="No me han realizado la prueba" />
+  					</b:radiobutton>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="2">
+						<b:commandButton value="Atras"  look="primary" style="width:100%" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:commandButton value="Guardar" look="primary" style="width:100%" />
+					</b:column>
+				</b:row>
+				
+
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+			</b:container>
+		</h:form>
+	</h:panelGroup> 
+</h:body>
+</html>
