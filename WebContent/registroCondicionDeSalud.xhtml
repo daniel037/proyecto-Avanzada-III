@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+
+	<h:panelGroup>
+	<h:form horizontal="true">
+	
+			<!-- **************************************************  -->
+			<!-- formulario para registro de condicion de salud          -->
+			<!-- **************************************************  -->
+			<b:container fluid="true">
+				<b:row>
+					<b:column medium-screen="10">
+						<h1>Registro De Condiciones De Salud COVID-19</h1>
+    				</b:column>
+				</b:row>
+				<b:row>
+					<b:column medium-screen="10">
+						<p>El diligenciamiento de este registro le permite a la universidad de Nariño
+							realizar un seguimiento a las condiciones de salid de sus estudiantes y
+							funcionarios. Toda esta información se manejará con la reserva y 
+							confidencialidad requerida.
+						</p>
+						<br></br>
+						<p>Elija su rol dentro de la Universidad de Nariño para registrar su información: </p>
+    				</b:column>
+				</b:row>
+				<b:row>
+					<b:column medium-screen="5">
+						<b:selectOneMenu name="roll" large-screen="full-width">
+							<f:selectItem itemLabel="Estudiante" itemValue="esudiante" />
+							<f:selectItem itemLabel="Funcionario" itemValue="funcionario" />
+						</b:selectOneMenu>
+					</b:column>	
+					
+				</b:row>
+					<b:column medium-screen="2">
+						<b:commandButton value="Siguiente" update="@form" look="primary" style="width:100%" />
+					</b:column>
+				<b:row>
+				</b:row>
+
+			</b:container>
+		</h:form>
+	</h:panelGroup> 
+</h:body>
+</html>

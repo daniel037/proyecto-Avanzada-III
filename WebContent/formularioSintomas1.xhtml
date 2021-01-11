@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+
+	<h:panelGroup>
+	<h:form horizontal="true">
+	
+			<!-- **************************************************  -->
+			<!-- formularios de sintomas              -->
+			<!-- **************************************************  -->
+			<b:container fluid="true">
+				<b:row>
+					<b:column medium-screen="10">
+						<h1>Forulario De Sintomas</h1>
+    				</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="5">
+						<p>
+							¿En los últimos 2 días han tenido alguno de estos síntomas.
+							(NO RELACIONADOS CON ALERGIAS RESPIRATORIAS):
+						</p>
+						<br></br>
+					</b:column>	
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Fiebre mayor a 38 grados:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobuttonBean.javaVersion}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobuttonBean.javaVersion}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Tos:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobutton.tos}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobutton.tos}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Malestar general:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobutton.malestar}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobutton.malestar}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Dolor de cabeza:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobutton.dolor}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobutton.dolor}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Perdida del gusto:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobutton.gusto}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobutton.gusto}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Perdida del olfato:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobutton.olfato}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobutton.olfato}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Congestion y/o secrecion nasal:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobutton.congestion}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobutton.congestion}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Dificultad para respirar:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobutton.dificultad}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobutton.dificultad}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="3">
+						<h:outputText value="Dolor en el pecho y/o convulsiones:" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:panelGrid size="xs" columns="2">	
+     						<b:radiobutton value="#{radiobutton.dolorPecho}" itemLabel="SI" itemValue="SI" />
+    						<b:radiobutton value="#{radiobutton.dolorPecho}" itemLabel="NO" itemValue="NO" />
+  						</b:panelGrid>
+					</b:column>
+				</b:row>
+				
+				
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+				<b:row>
+					<b:column medium-screen="2">
+						<b:commandButton value="Atras"  look="primary" style="width:100%" />
+					</b:column>
+					<b:column medium-screen="2">
+						<b:commandButton value="Continuar" look="primary" style="width:100%" />
+					</b:column>
+				</b:row>
+				
+
+				<b:row>
+					<b:column medium-screen="10">
+						<br></br>
+					</b:column>
+				</b:row>
+				
+			</b:container>
+		</h:form>
+	</h:panelGroup> 
+</h:body>
+</html>
