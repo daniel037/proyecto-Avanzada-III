@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+	<b:panel title="" collapsible="false" span="6" offset="3">
+	<h:form >	
+			<!-- **************************************************  -->
+			<!-- Sección inicio de sesion  -->
+			<!-- **************************************************  -->
+			<b:container fluid="true">
+				<b:row >
+					<b:column span="5" offset="4">
+						<h2>Condición de Salud</h2>
+						<h2>Universidad de Nariño</h2>
+					</b:column>
+					<b:column span="1" offset="1">
+						<img src="RESOURCES/escudo100X100.png"  alt="Udenar logo"/>
+					</b:column>
+				</b:row><br/>
+				<b:row>
+					<b:column span="2" offset="5">
+						<img src="RESOURCES/user150.png"  alt="User logo"/>
+					</b:column>
+				</b:row><br/><br/>
+				<b:row>
+					<b:column span="4" offset="4">
+						<b:inputText placeholder="Usuario" />
+					</b:column>
+				</b:row>
+				<b:row>
+					<b:column span="4" offset="4">
+						<b:inputText placeholder="Contraseña" />
+					</b:column>
+				</b:row><br/>
+				<b:row >
+					<b:column span="5" offset="4">
+						<b:link style-class="some-class" onclick="alert('clicked!'); return false;" value="¿Olvidó su nombre de usuario o contraseña?" />
+					</b:column>
+				</b:row><br/><br/>
+				<b:row class="justify-content-center">
+					<b:column class="align-self-center text-center">
+						<b:button value="Acceder" look="primary"/>
+					</b:column>
+				</b:row>
+				<b:row class="justify-content-center">
+					<b:column class="align-self-center text-center">
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
+						  <label class="form-check-label" for="defaultCheck1">Mantenerme conectado</label>
+						</div>
+					</b:column>
+				</b:row><br/><br/>
+				<b:row class="justify-content-center">
+					<b:column class="align-self-center text-center">
+						<b:button value="Registrarse" look="primary"/>
+					</b:column>
+				</b:row>			
+			</b:container>
+		</h:form>
+	</b:panel> 
+</h:body>
+</html>
