@@ -12,7 +12,7 @@
 
 <h:body>
 
-	<h:panelGroup>
+	<b:panel title="" collapsible="false" span="5" offset="3">
 	<h:form horizontal="true">
 	
 			<!-- **************************************************  -->
@@ -26,10 +26,10 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="1">
+					<b:column medium-screen="2">
 						<h:outputText value="Nombre:" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="4">
 						<b:inputText placeholder="Nombre Completo" required="true" id="txt_nombre" />
 					</b:column>
 					<b:column medium-screen="2">
@@ -38,10 +38,10 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="1">
+					<b:column medium-screen="2">
 						<h:outputText value="Identificacion:" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="4">
 						<b:inputText placeholder="Identificacion" required="true" id="txt_id" mask="numeric" />
 					</b:column>
 					<b:column medium-screen="2">
@@ -50,11 +50,11 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="1">
+					<b:column medium-screen="2">
 						<h:outputText value="Cargo: " />
 					</b:column>
 					
-					<b:column medium-screen="2">
+					<b:column medium-screen="4">
 						<b:selectOneMenu name="cargo" large-screen="full-width" id="select_cargo">
 							<f:selectItem itemLabel="Cargo" itemValue="" />
 							<f:selectItem itemLabel="..." itemValue="..." />
@@ -68,11 +68,11 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="1">
+					<b:column medium-screen="2">
 						<h:outputText value="Dependencia: " />
 					</b:column>
 					
-					<b:column medium-screen="2">
+					<b:column medium-screen="4">
 						<b:selectOneMenu name="dependencia" large-screen="full-width" id="select_dependencia">
 							<f:selectItem itemLabel="Dependencia" itemValue="" />
 							<f:selectItem itemLabel="..." itemValue="..." />
@@ -86,10 +86,10 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="1">
+					<b:column medium-screen="2">
 						<h:outputText value="Email:" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="4">
 						<b:inputText placeholder="Email" required="true" id="txt_email" />
 					</b:column>
 					<b:column medium-screen="2">
@@ -98,10 +98,10 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="1">
+					<b:column medium-screen="2">
 						<h:outputText value="Celularl:" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="4">
 						<b:inputText placeholder="Numero Celular" required="true" id="txt_celular" mask="numeric" />
 					</b:column>
 					<b:column medium-screen="2">
@@ -110,10 +110,10 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="1">
+					<b:column medium-screen="2">
 						<h:outputText value="Telefono:" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="4">
 						<b:inputText placeholder="Numero Telefono"  id="txt_telefono" mask="numeric" />
 					</b:column>
 					<b:column medium-screen="2">
@@ -129,10 +129,10 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="2">
+					<b:column medium-screen="3">
 						<b:commandButton value="Actualizar"  look="primary" style="width:100%" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="3">
 						<b:commandButton value="Continuar" look="primary" style="width:100%" />
 					</b:column>
 				</b:row>
@@ -146,6 +146,6 @@
 				
 			</b:container>
 		</h:form>
-	</h:panelGroup> 
+	</b:panel> 
 </h:body>
 </html>
