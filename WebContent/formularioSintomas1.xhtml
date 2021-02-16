@@ -12,166 +12,168 @@
 
 <h:body>
 
-	<b:panel title="" collapsible="false" span="5" offset="3">
-	<h:form horizontal="true">
-	
-			<!-- **************************************************  -->
-			<!-- formularios de sintomas              -->
-			<!-- **************************************************  -->
-			<b:container fluid="true" >
-				<b:row>
-					<b:column medium-screen="10">
-						<h1>Formulario De Síntomas</h1>
-    				</b:column>
-    				<b:column span="1">
-						<img src="RESOURCES/escudo100X100.png"  alt="Udenar logo"/>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="8">
-						<p>
-							¿En los últimos 2 días ha tenido alguno de estos síntomas?
+	<b:container fluid="true" >
+		<b:panel title="" collapsible="false" span="5" offset="3">
+			<b:form horizontal="true">
+			
+				<!-- **************************************************  -->
+				<!-- formularios de sintomas              -->
+				<!-- **************************************************  -->
+				<b:container fluid="true" >
+					<b:row>
+						<b:column medium-screen="8">
+							<h1>Formulario De Síntomas</h1>
+	    				</b:column>
+	    				
+	    				<b:column span="1">
+							<img src="RESOURCES/escudo100X100.png"  alt="Udenar_logo"/>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="8">
+							<p>
+								¿En los últimos 2 días ha tenido alguno de estos síntomas?
+								<br></br>
+								<i> No relacionados con alergias respiratorias</i>:
+							</p>
+							<hr></hr>
+						</b:column>	
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Fiebre mayor a 38 grados:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobuttonBean.javaVersion}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobuttonBean.javaVersion}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Tos:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobutton.tos}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobutton.tos}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Malestar general:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobutton.malestar}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobutton.malestar}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Dolor de cabeza:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobutton.dolor}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobutton.dolor}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Pérdida del gusto:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobutton.gusto}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobutton.gusto}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Pérdida del olfato:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobutton.olfato}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobutton.olfato}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Congestión y/o secreción nasal:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobutton.congestion}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobutton.congestion}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Dificultad para respirar:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobutton.dificultad}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobutton.dificultad}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="5">
+							<h:outputText value="Dolor en el pecho y/o convulsiones:" />
+						</b:column>
+						<b:column medium-screen="2">
+							<b:panelGrid size="xs" columns="2">	
+	     						<b:radiobutton value="#{radiobutton.dolorPecho}" itemLabel="SI" itemValue="SI" />
+	    						<b:radiobutton value="#{radiobutton.dolorPecho}" itemLabel="NO" itemValue="NO" />
+	  						</b:panelGrid>
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="10">
 							<br></br>
-							<i> No relacionados con alergias respiratorias</i>:
-						</p>
-						<hr></hr>
-					</b:column>	
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Fiebre mayor a 38 grados:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobuttonBean.javaVersion}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobuttonBean.javaVersion}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Tos:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobutton.tos}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobutton.tos}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Malestar general:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobutton.malestar}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobutton.malestar}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Dolor de cabeza:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobutton.dolor}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobutton.dolor}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Pérdida del gusto:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobutton.gusto}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobutton.gusto}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Pérdida del olfato:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobutton.olfato}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobutton.olfato}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Congestión y/o secreción nasal:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobutton.congestion}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobutton.congestion}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Dificultad para respirar:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobutton.dificultad}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobutton.dificultad}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="5">
-						<h:outputText value="Dolor en el pecho y/o convulsiones:" />
-					</b:column>
-					<b:column medium-screen="2">
-						<b:panelGrid size="xs" columns="2">	
-     						<b:radiobutton value="#{radiobutton.dolorPecho}" itemLabel="SI" itemValue="SI" />
-    						<b:radiobutton value="#{radiobutton.dolorPecho}" itemLabel="NO" itemValue="NO" />
-  						</b:panelGrid>
-					</b:column>
-				</b:row>
-				
-				
-				<b:row>
-					<b:column medium-screen="10">
-						<br></br>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="3">
-						<b:commandButton value="Atras"  look="warning" style="width:100%" />
-					</b:column>
-					<b:column medium-screen="3">
-						<b:commandButton value="Continuar" look="primary" style="width:100%" />
-					</b:column>
-				</b:row>
-				
+						</b:column>
+					</b:row>
+					
+					<b:row>
+						<b:column medium-screen="3">
+							<b:commandButton value="Atras"  look="warning" style="width:100%" />
+						</b:column>
+						<b:column medium-screen="3">
+							<b:commandButton value="Continuar" look="primary" style="width:100%" />
+						</b:column>
+					</b:row>
+					
+					<b:row>
+							<b:column medium-screen="10">
+								<br></br>
+							</b:column>
+						</b:row>
+						
+				</b:container>
+			</b:form>
+		</b:panel>
+	</b:container> 
 
-				<b:row>
-					<b:column medium-screen="10">
-						<br></br>
-					</b:column>
-				</b:row>
-				
-			</b:container>
-		</h:form>
-	</b:panel> 
 </h:body>
 </html>
