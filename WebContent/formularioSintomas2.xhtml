@@ -11,142 +11,149 @@
 </h:head>
 
 <h:body>
-
-	<b:panel title="" collapsible="false" span="5" offset="3">
-	<h:form horizontal="true">
+	<b:container fluid="true">
 	
-			<!-- **************************************************  -->
-			<!-- formularios de sintomas 2             -->
-			<!-- **************************************************  -->
-			<b:container fluid="true">
-				<b:row>
-					<b:column medium-screen="10">
-						<h1>Formulario De Síntomas</h1>
-						<h2>Segunda Parte</h2>
-    				</b:column>
-    				<b:column span="1">
-						<img src="RESOURCES/escudo100X100.png"  alt="Udenar logo"/>
-					</b:column>
-    				<br></br>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="12">
-						<p>
-							¿En los últimos 2 días ha tenido alguno de estos síntomas?
-							<i> No relacionados con alergias respiratorias</i>:
-						</p>
-						<br></br>
-					</b:column>	
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="12">
-						<p>
-							¿En los últimos 14 días, ha tenido contacto estrecho (Menor a 2 metros por más de 15 minutos)
-							con una persona con síntomas respiratorios y usted no sabe si tiene COVID-19 positivo?
-						</p>
-					</b:column>		
-				</b:row>
-				<b:row>
-					<b:radiobutton value="#{radiobutton.pregunta1}">
-    					<f:selectItem itemValue="" itemLabel="Si he tenido contacto con una persona con síntomas respiratorios." />
-    					<f:selectItem itemValue=""  itemLabel="NO" />
-  					</b:radiobutton>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="12">
-						<br></br>
-					</b:column>
-				</b:row>
-				
-				
-				<b:row>
-					<b:column medium-screen="12">
-						<p>
-							¿En los últimos 14 días, ha tenido contacto estrecho (Menor a 2 metros por más de 15 minutos) 
-							con una persona con COVID-19?
-						</p>
-					</b:column>		
-				</b:row>
-				<b:row>
-					<b:radiobutton value="#{radiobutton.pregunta2}">
-    					<f:selectItem itemValue="" itemLabel="Si he tenido contacto con una persona COVID-19 positivo." />
-    					<f:selectItem itemValue=""  itemLabel="NO" />
-  					</b:radiobutton>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="10">
-						<br></br>
-					</b:column>
-				</b:row>
-				
-				
-				<b:row>
-					<b:column medium-screen="12">
-						<p>
-							¿En los últimos 14 días, ha estado en aislamiento preventivo por presentar
-							síntomas respiratorios y/o contacto estrecho con casos
-							sospechosos o confirmados de COVID-19?
-						</p>
-					</b:column>		
-				</b:row>
-				<b:row>
-					<b:radiobutton value="#{radiobutton.pregunta3}">
-    					<f:selectItem itemValue="" itemLabel="Si" />
-    					<f:selectItem itemValue=""  itemLabel="NO" />
-  					</b:radiobutton>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="10">
-						<br></br>
-					</b:column>
-				</b:row>
-				
-				
-				<b:row>
-					<b:column medium-screen="12">
-						<p>	
-							¿En los últimos 14 días, le han realizado pruebas de COVID-19?
-						</p>
-					</b:column>		
-				</b:row>
-				<b:row>
-					<b:radiobutton value="#{radiobutton.pregunta4}">
-    					<f:selectItem itemValue="" itemLabel="Si, el resultado fue POSITIVO." />
-    					<f:selectItem itemValue=""  itemLabel="Si, el resultado fue NEGATIVO." />
-    					<f:selectItem itemValue=""  itemLabel="Si, el resultado esta pendiente." />
-    					<f:selectItem itemValue=""  itemLabel="No me han realizado la prueba." />
-  					</b:radiobutton>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="10">
-						<br></br>
-					</b:column>
-				</b:row>
-				
-				<b:row>
-					<b:column medium-screen="3">
-						<b:commandButton value="Regresar"  look="warning" style="width:100%" />
-					</b:column>
-					<b:column medium-screen="3">
-						<b:commandButton value="Guardar" look="primary" style="width:100%" />
-					</b:column>
-				</b:row>
-				
+		<b:panel title="" collapsible="false" span="5" offset="3">
+			<h:form horizontal="true">
+			
+					<!-- **************************************************  -->
+					<!-- formularios de sintomas 2             -->
+					<!-- **************************************************  -->
+					<b:container fluid="true">
+						
+						<b:row>
+							<b:column medium-screen="8">
+								<h1>Formulario De Síntomas</h1>
+								<hr></hr>
+								<h2>Segunda Parte</h2>
+		    				</b:column>
+		    				<b:column span="1">
+								<img src="RESOURCES/escudo100X100.png"  alt="Udenar logo"/>
+							</b:column>
+		    				<br></br>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="12">
+								<p>
+									¿En los últimos 2 días ha tenido alguno de estos síntomas?
+									<i> No relacionados con alergias respiratorias</i>:
+								</p>
+								<hr></hr>
+							</b:column>	
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="12">
+								<p>
+									¿En los últimos 14 días, ha tenido contacto estrecho (Menor a 2 metros por más de 15 minutos)
+									con una persona con síntomas respiratorios y usted no sabe si tiene COVID-19 positivo?
+								</p>
+							</b:column>		
+						</b:row>
+						
+						<b:row>
+							<b:radiobutton value="#{radiobutton.pregunta1}">
+		    					<f:selectItem itemValue="" itemLabel="Si he tenido contacto con una persona con síntomas respiratorios." />
+		    					<f:selectItem itemValue=""  itemLabel="NO" />
+		  					</b:radiobutton>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="12">
+								<br></br>
+							</b:column>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="12">
+								<p>
+									¿En los últimos 14 días, ha tenido contacto estrecho (Menor a 2 metros por más de 15 minutos) 
+									con una persona con COVID-19?
+								</p>
+							</b:column>		
+						</b:row>
+						
+						<b:row>
+							<b:radiobutton value="#{radiobutton.pregunta2}">
+		    					<f:selectItem itemValue="" itemLabel="Si he tenido contacto con una persona COVID-19 positivo." />
+		    					<f:selectItem itemValue=""  itemLabel="NO" />
+		  					</b:radiobutton>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="10">
+								<br></br>
+							</b:column>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="12">
+								<p>
+									¿En los últimos 14 días, ha estado en aislamiento preventivo por presentar
+									síntomas respiratorios y/o contacto estrecho con casos
+									sospechosos o confirmados de COVID-19?
+								</p>
+							</b:column>		
+						</b:row>
+						
+						<b:row>
+							<b:radiobutton value="#{radiobutton.pregunta3}">
+		    					<f:selectItem itemValue="" itemLabel="Si" />
+		    					<f:selectItem itemValue=""  itemLabel="NO" />
+		  					</b:radiobutton>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="10">
+								<br></br>
+							</b:column>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="12">
+								<p>	
+									¿En los últimos 14 días, le han realizado pruebas de COVID-19?
+								</p>
+							</b:column>		
+						</b:row>
+						
+						<b:row>
+							<b:radiobutton value="#{radiobutton.pregunta4}">
+		    					<f:selectItem itemValue="" itemLabel="Si, el resultado fue POSITIVO." />
+		    					<f:selectItem itemValue=""  itemLabel="Si, el resultado fue NEGATIVO." />
+		    					<f:selectItem itemValue=""  itemLabel="Si, el resultado esta pendiente." />
+		    					<f:selectItem itemValue=""  itemLabel="No me han realizado la prueba." />
+		  					</b:radiobutton>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="10">
+								<br></br>
+							</b:column>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="3">
+								<b:commandButton value="Regresar"  look="warning" style="width:100%" />
+							</b:column>
+							<b:column medium-screen="3">
+								<b:commandButton value="Guardar" look="primary" style="width:100%" />
+							</b:column>
+						</b:row>
+						
+						<b:row>
+							<b:column medium-screen="10">
+								<br></br>
+							</b:column>
+						</b:row>
+						
+					</b:container>
+				</h:form>
+		</b:panel> 
+		
+	</b:container>
 
-				<b:row>
-					<b:column medium-screen="10">
-						<br></br>
-					</b:column>
-				</b:row>
-				
-			</b:container>
-		</h:form>
-	</b:panel> 
+
 </h:body>
 </html>
