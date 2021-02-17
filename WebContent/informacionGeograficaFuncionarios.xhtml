@@ -12,7 +12,7 @@
 
 <h:body>
 
-	<b:panel title="" collapsible="false" span="5" offset="3">
+	<b:panel title="" collapsible="false" span="8" offset="2">
 	<h:form horizontal="true">
 	
 			<!-- **************************************************  -->
@@ -30,30 +30,30 @@
 				
 				<b:row style= "margin-top: 20px">
 					<b:column medium-screen="2">
-						<h:outputText value="Identificación:" />
+						<h:outputText value="Identificación: * " />
 					</b:column>
-					<b:column medium-screen="4">
+					<b:column medium-screen="5">
 						<b:inputText placeholder="Identificación" required="true" id="txt_id" mask="numeric" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="txt_id" />
     				</b:column>
 				</b:row>
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="País: " />
+						<h:outputText value="País: *" />
 					</b:column>
 					
-					<b:column medium-screen="4">
-						<b:selectOneMenu name="pais" large-screen="full-width" id="select_pais">
+					<b:column medium-screen="5">
+						<b:selectOneMenu name="pais" required="true" id="select_pais">
 							<f:selectItem itemLabel="País" itemValue="" />
 							<f:selectItem itemLabel="Colombia" itemValue="colombia" />
 							<f:selectItem itemLabel="Ecuador" itemValue="ecuador" />
 							<f:selectItem itemLabel="Venesuela" itemValue="venesuela" />
 						</b:selectOneMenu>
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="select_pais" />
     				</b:column>
 				</b:row>
@@ -61,36 +61,36 @@
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Departamento: " />
+						<h:outputText value="Departamento: *" />
 					</b:column>
 					
-					<b:column medium-screen="4">
-						<b:selectOneMenu name="departamento" large-screen="full-width" id="select_departamento">
+					<b:column medium-screen="5">
+						<b:selectOneMenu name="departamento" required="true" id="select_departamento">
 							<f:selectItem itemLabel="Departamento" itemValue="" />
 							<f:selectItem itemLabel="Nariño" itemValue="nariño" />
 							<f:selectItem itemLabel="Cauca" itemValue="cauca" />
 							<f:selectItem itemLabel="Antioquia" itemValue="antioquia" />
 						</b:selectOneMenu>
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="select_departamento" />
     				</b:column>
 				</b:row>
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Municipio: " />
+						<h:outputText value="Municipio: *" />
 					</b:column>
 					
-					<b:column medium-screen="4">
-						<b:selectOneMenu name="municipio" large-screen="full-width" id="select_municipio">
+					<b:column medium-screen="5">
+						<b:selectOneMenu name="municipio" required="true" id="select_municipio">
 							<f:selectItem itemLabel="Municipio" itemValue="" />
 							<f:selectItem itemLabel="..." itemValue="..." />
 							<f:selectItem itemLabel="..." itemValue="..." />
 							<f:selectItem itemLabel="..." itemValue="..." />
 						</b:selectOneMenu>
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="select_pais" />
     				</b:column>
 				</b:row>
@@ -99,24 +99,24 @@
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Dirección:" />
+						<h:outputText value="Dirección: *" />
 					</b:column>
-					<b:column medium-screen="4">
+					<b:column medium-screen="5">
 						<b:inputText placeholder="Dirección" required="true" id="txt_direccion" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="txt_direccion" />
     				</b:column>
 				</b:row>
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Ubicación:" />
+						<h:outputText value="Ubicación: *" />
 					</b:column>
-					<b:column medium-screen="3">
+					<b:column medium-screen="5">
 						<b:inputText placeholder="Ubicación Actual" required="true" id="txt_ubicacion" mask="numeric" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="txt_ubicacion" />
     				</b:column>
 				</b:row>
@@ -128,13 +128,13 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="3">
+					<b:column medium-screen="4">
 						<b:commandButton value="Guardar"  look="primary" style="width:100%" />
 					</b:column>
-					<b:column medium-screen="3">
+					<b:column medium-screen="4">
 						<b:commandButton value="Actualizar" look="warning" style="width:100%" />
 					</b:column>
-					<b:column medium-screen="3">
+					<b:column medium-screen="4">
 						<b:commandButton value="Registrar" look="success" style="width:100%" />
 					</b:column>
 				</b:row>

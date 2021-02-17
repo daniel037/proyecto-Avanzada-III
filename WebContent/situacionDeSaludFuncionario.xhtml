@@ -12,7 +12,7 @@
 
 <h:body>
 
-	<b:panel title="" collapsible="false" span="5" offset="3">
+	<b:panel title="" collapsible="false" span="8" offset="2">
 	<h:form horizontal="true">
 	
 			<!-- **************************************************  -->
@@ -30,84 +30,84 @@
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Nombre:" />
+						<h:outputText value="Nombre: *" />
 					</b:column>
-					<b:column medium-screen="4">
+					<b:column medium-screen="5">
 						<b:inputText placeholder="Nombre Completo" required="true" id="txt_nombre" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="txt_nombre" />
     				</b:column>
 				</b:row>
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Identificación:" />
+						<h:outputText value="Identificación: *" />
 					</b:column>
-					<b:column medium-screen="4">
+					<b:column medium-screen="5">
 						<b:inputText placeholder="Identificación" required="true" id="txt_id" mask="numeric" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="txt_id" />
     				</b:column>
 				</b:row>
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Cargo: " />
+						<h:outputText value="Cargo: * " />
 					</b:column>
 					
-					<b:column medium-screen="4">
-						<b:selectOneMenu name="cargo" large-screen="full-width" id="select_cargo">
+					<b:column medium-screen="5">
+						<b:selectOneMenu name="cargo" required="true" id="select_cargo">
 							<f:selectItem itemLabel="Cargo" itemValue="" />
 							<f:selectItem itemLabel="..." itemValue="..." />
 							<f:selectItem itemLabel="..." itemValue="..." />
 							<f:selectItem itemLabel="..." itemValue="..." />
 						</b:selectOneMenu>
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="select_cargo" />
     				</b:column>
 				</b:row>
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Dependencia: " />
+						<h:outputText value="Dependencia:  *" />
 					</b:column>
 					
-					<b:column medium-screen="4">
-						<b:selectOneMenu name="dependencia" large-screen="full-width" id="select_dependencia">
+					<b:column medium-screen="5">
+						<b:selectOneMenu name="dependencia" required="true" id="select_dependencia">
 							<f:selectItem itemLabel="Dependencia" itemValue="" />
 							<f:selectItem itemLabel="..." itemValue="..." />
 							<f:selectItem itemLabel="..." itemValue="..." />
 							<f:selectItem itemLabel="..." itemValue="..." />
 						</b:selectOneMenu>
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="select_dependencia" />
     				</b:column>
 				</b:row>
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Email:" />
+						<h:outputText value="Email: *" />
 					</b:column>
-					<b:column medium-screen="4">
+					<b:column medium-screen="5">
 						<b:inputText placeholder="Email" required="true" id="txt_email" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="txt_email" />
     				</b:column>
 				</b:row>
 				
 				<b:row>
 					<b:column medium-screen="2">
-						<h:outputText value="Celular:" />
+						<h:outputText value="Celular: *" />
 					</b:column>
-					<b:column medium-screen="4">
+					<b:column medium-screen="5">
 						<b:inputText placeholder="Número Celular" required="true" id="txt_celular" mask="numeric" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="txt_celular" />
     				</b:column>
 				</b:row>
@@ -116,10 +116,10 @@
 					<b:column medium-screen="2">
 						<h:outputText value="Teléfono:" />
 					</b:column>
-					<b:column medium-screen="4">
+					<b:column medium-screen="5">
 						<b:inputText placeholder="Número Teléfono"  id="txt_telefono" mask="numeric" />
 					</b:column>
-					<b:column medium-screen="2">
+					<b:column medium-screen="5">
       					<b:message for="txt_telefono" />
     				</b:column>
 				</b:row>
@@ -132,10 +132,11 @@
 				</b:row>
 				
 				<b:row>
-					<b:column medium-screen="3">
+					<b:column medium-screen="2"></b:column>
+					<b:column medium-screen="4">
 						<b:commandButton value="Actualizar"  look="warning" style="width:100%" />
 					</b:column>
-					<b:column medium-screen="3">
+					<b:column medium-screen="4">
 						<b:commandButton value="Continuar" look="primary" style="width:100%" />
 					</b:column>
 				</b:row>
