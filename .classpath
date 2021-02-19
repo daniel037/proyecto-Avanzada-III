@@ -14,14 +14,14 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/wildfliy/wildfly-21.0.1.Final/modules/system/layers/base/com/sun/jsf-impl/main/jsf-impl-2.3.14.SP01.jar"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/workspace-java/proyecto/WebContent/WEB-INF/lib/activation-1.1.jar"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/workspace-java/proyecto/WebContent/WEB-INF/lib/BootsFaces-OSP-1.5.0.jar"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/workspace-java/proyecto/WebContent/WEB-INF/lib/cdi-api-2.0.SP1.jar"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/workspace-java/proyecto/WebContent/WEB-INF/lib/javaee-api-8.0.1.jar"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/workspace-java/proyecto/WebContent/WEB-INF/lib/javax.el-api-3.0.0.jar"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/workspace-java/proyecto/WebContent/WEB-INF/lib/javax.inject-1.jar"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/workspace-java/proyecto/WebContent/WEB-INF/lib/javax.interceptor-api-1.2.jar"/>
-	<classpathentry kind="lib" path="B:/UDENAR/B - 2020/programacion avanzada 3/workspace-java/proyecto/WebContent/WEB-INF/lib/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/BootsFaces-OSP-1.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/cdi-api-2.0.SP1.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/javaee-api-8.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/javax.el-api-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/javax.interceptor-api-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/felipe/Documents/UDENAR/10 semestre/E.Prog-Avanzada lll/workspaceclipse/proyecto/WebContent/WEB-INF/lib/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
